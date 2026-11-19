@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-sam-segment"
+description = "Enables the sam_segment command without any pre-configured scope."
+commands.allow = ["sam_segment"]
+
+[[permission]]
+identifier = "deny-sam-segment"
+description = "Denies the sam_segment command without any pre-configured scope."
+commands.deny = ["sam_segment"]

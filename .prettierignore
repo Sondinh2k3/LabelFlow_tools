@@ -1,0 +1,13 @@
+node_modules
+dist
+src-tauri/target
+src-tauri/gen
+.tools
+.cache
+package-lock.json
+Cargo.lock
+docs/master-plan.md
+test-results
+playwright-report
+releases
+tools/lop.yaml

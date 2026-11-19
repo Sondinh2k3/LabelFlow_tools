@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-save-class"
+description = "Enables the save_class command without any pre-configured scope."
+commands.allow = ["save_class"]
+
+[[permission]]
+identifier = "deny-save-class"
+description = "Denies the save_class command without any pre-configured scope."
+commands.deny = ["save_class"]

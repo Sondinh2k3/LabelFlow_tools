@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-reject-review-prediction"
+description = "Enables the reject_review_prediction command without any pre-configured scope."
+commands.allow = ["reject_review_prediction"]
+
+[[permission]]
+identifier = "deny-reject-review-prediction"
+description = "Denies the reject_review_prediction command without any pre-configured scope."
+commands.deny = ["reject_review_prediction"]

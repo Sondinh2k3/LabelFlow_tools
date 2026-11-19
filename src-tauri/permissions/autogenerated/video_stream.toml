@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-video-stream"
+description = "Enables the video_stream command without any pre-configured scope."
+commands.allow = ["video_stream"]
+
+[[permission]]
+identifier = "deny-video-stream"
+description = "Denies the video_stream command without any pre-configured scope."
+commands.deny = ["video_stream"]

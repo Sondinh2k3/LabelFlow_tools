@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-media-origin"
+description = "Enables the media_origin command without any pre-configured scope."
+commands.allow = ["media_origin"]
+
+[[permission]]
+identifier = "deny-media-origin"
+description = "Denies the media_origin command without any pre-configured scope."
+commands.deny = ["media_origin"]

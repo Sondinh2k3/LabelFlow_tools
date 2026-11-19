@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-inspect-mask"
+description = "Enables the inspect_mask command without any pre-configured scope."
+commands.allow = ["inspect_mask"]
+
+[[permission]]
+identifier = "deny-inspect-mask"
+description = "Denies the inspect_mask command without any pre-configured scope."
+commands.deny = ["inspect_mask"]

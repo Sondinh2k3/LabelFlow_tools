@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-extract-frames"
+description = "Enables the extract_frames command without any pre-configured scope."
+commands.allow = ["extract_frames"]
+
+[[permission]]
+identifier = "deny-extract-frames"
+description = "Denies the extract_frames command without any pre-configured scope."
+commands.deny = ["extract_frames"]

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-inspect-mask-folder"
+description = "Enables the inspect_mask_folder command without any pre-configured scope."
+commands.allow = ["inspect_mask_folder"]
+
+[[permission]]
+identifier = "deny-inspect-mask-folder"
+description = "Denies the inspect_mask_folder command without any pre-configured scope."
+commands.deny = ["inspect_mask_folder"]

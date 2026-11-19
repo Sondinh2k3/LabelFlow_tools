@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-pidnet-schema",
+  "name": "Fixture pidnet-schema (not trained)",
+  "version": "1.0.0",
+  "license": "Project-owned test fixture; no third-party weights",
+  "file": "pidnet-schema.onnx",
+  "sha256": "91f7a1949fa4d8e7053a381a263260b47876a779cc502c29a63a8159e3332e09",
+  "adapter": "pidnet_semantic",
+  "layerId": "cityscapes_semantic",
+  "classMap": [
+    "cityscapes-0",
+    "cityscapes-1",
+    "cityscapes-2",
+    "cityscapes-3",
+    "cityscapes-4",
+    "cityscapes-5",
+    "cityscapes-6",
+    "cityscapes-7",
+    "cityscapes-8",
+    "cityscapes-9",
+    "cityscapes-10",
+    "cityscapes-11",
+    "cityscapes-12",
+    "cityscapes-13",
+    "cityscapes-14",
+    "cityscapes-15",
+    "cityscapes-16",
+    "cityscapes-17",
+    "cityscapes-18"
+  ],
+  "input": {
+    "name": "image",
+    "width": 4,
+    "height": 2,
+    "mean": [0, 0, 0],
+    "std": [1, 1, 1]
+  },
+  "output": {
+    "name": "output",
+    "format": "logits_nchw",
+    "resize": "bilinear_half_pixel"
+  }
+}

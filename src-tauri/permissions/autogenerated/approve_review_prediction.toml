@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-approve-review-prediction"
+description = "Enables the approve_review_prediction command without any pre-configured scope."
+commands.allow = ["approve_review_prediction"]
+
+[[permission]]
+identifier = "deny-approve-review-prediction"
+description = "Denies the approve_review_prediction command without any pre-configured scope."
+commands.deny = ["approve_review_prediction"]

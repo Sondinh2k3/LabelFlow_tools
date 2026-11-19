@@ -1,0 +1,61 @@
+{
+  "measuredDate": "2026-11-07",
+  "results": {
+    "width": 1920,
+    "height": 1080,
+    "brush": [
+      {
+        "workload": "32 short brush moves, radius 16",
+        "baseline": {
+          "p50Ms": 0.30000001192092896,
+          "p95Ms": 0.5999999642372131,
+          "samples": 50
+        },
+        "optimized": {
+          "p50Ms": 0.10000002384185791,
+          "p95Ms": 0.30000001192092896,
+          "samples": 50
+        },
+        "exact": true
+      },
+      {
+        "workload": "4 long diagonal moves, radius 24",
+        "baseline": {
+          "p50Ms": 9.5,
+          "p95Ms": 11.100000023841858,
+          "samples": 50
+        },
+        "optimized": {
+          "p50Ms": 0.19999998807907104,
+          "p95Ms": 0.30000001192092896,
+          "samples": 50
+        },
+        "exact": true
+      },
+      {
+        "workload": "32 clipped eraser moves, radius 32",
+        "baseline": {
+          "p50Ms": 0.3999999761581421,
+          "p95Ms": 0.5,
+          "samples": 50
+        },
+        "optimized": {
+          "p50Ms": 0.10000002384185791,
+          "p95Ms": 0.19999998807907104,
+          "samples": 50
+        },
+        "exact": true
+      }
+    ],
+    "cache": {
+      "baselineM4Entries": 500,
+      "baselineM4RgbaBytes": 24576000,
+      "m5Entries": 10,
+      "m5RgbaBytes": 491520,
+      "hiddenRasterEntries": 0,
+      "scope": "Referenced Canvas2D backing-store RGBA bytes; not OS working set"
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "scope": "M1 capsule-distance brush versus M5 scanline kernel; input arrays reset outside timed samples; excludes persistence and display scheduling"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-semantic",
+  "name": "Fixture semantic (not trained)",
+  "version": "1.0.0",
+  "license": "Project-owned test fixture; no third-party weights",
+  "file": "semantic.onnx",
+  "sha256": "a54606aea8be0324c193cd67f85894b1eb789e1cfb103601830722f487c98703",
+  "adapter": "onnx_semantic",
+  "layerId": "cityscapes_semantic",
+  "classMap": ["cityscapes-0", "cityscapes-1", "cityscapes-2"],
+  "input": {
+    "name": "image",
+    "width": 4,
+    "height": 2,
+    "mean": [0, 0, 0],
+    "std": [1, 1, 1]
+  },
+  "output": {
+    "name": "output",
+    "format": "logits_nchw",
+    "resize": "bilinear_half_pixel"
+  }
+}

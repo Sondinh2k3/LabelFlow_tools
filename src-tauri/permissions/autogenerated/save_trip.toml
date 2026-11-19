@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-save-trip"
+description = "Enables the save_trip command without any pre-configured scope."
+commands.allow = ["save_trip"]
+
+[[permission]]
+identifier = "deny-save-trip"
+description = "Denies the save_trip command without any pre-configured scope."
+commands.deny = ["save_trip"]

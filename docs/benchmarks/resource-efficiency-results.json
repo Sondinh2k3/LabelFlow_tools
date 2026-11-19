@@ -1,0 +1,499 @@
+{
+  "scope": "Native release Tauri + 1080p, 20 shapes, two masks. Gesture includes Playwright delivery and saved-DOM observation. UI selection includes two animation frames after bitmap readiness; navigation is separate preloaded IPC selection/document retrieval. Memory after explicit GC; summed process working sets double-count shared pages. Startup and idle CPU are single functional samples, not cold-start p95 or sustained power measurements.",
+  "native": {
+    "baseline": {
+      "shellVisibleMs": 677.9956,
+      "firstImageReadyMs": 1008.9377,
+      "idleCpuOneCorePercent": 0,
+      "idleSeconds": 3.480487,
+      "navigation": {
+        "p50Ms": 565.0020999999997,
+        "p95Ms": 622.7926000000007,
+        "samples": 10
+      },
+      "selectionToCanvas": {
+        "p50Ms": 145.79469999999856,
+        "p95Ms": 361.36559999999736,
+        "samples": 10
+      },
+      "strokeToSaved": {
+        "p50Ms": 167.23879999999917,
+        "p95Ms": 197.05999999999767,
+        "samples": 50
+      },
+      "idleHeap": {
+        "usedSize": 3680704,
+        "totalSize": 4263936,
+        "embedderHeapUsedSize": 1668112,
+        "backingStorageSize": 21088323
+      },
+      "afterHeap": {
+        "usedSize": 5314916,
+        "totalSize": 6168576,
+        "embedderHeapUsedSize": 2087528,
+        "backingStorageSize": 87443694
+      },
+      "idleMemory": {
+        "processes": 7,
+        "workingSetBytes": 589910016,
+        "privateBytes": 313782272,
+        "rows": [
+          {
+            "type": "main",
+            "name": "labelflow-smoke",
+            "pid": 18684,
+            "workingSet": 32739328,
+            "privateBytes": 8228864,
+            "cpuSeconds": 0.203125
+          },
+          {
+            "type": "main",
+            "name": "msedgewebview2",
+            "pid": 23556,
+            "workingSet": 131698688,
+            "privateBytes": 43253760,
+            "cpuSeconds": 1.25
+          },
+          {
+            "type": "crashpad-handler",
+            "name": "msedgewebview2",
+            "pid": 20844,
+            "workingSet": 10043392,
+            "privateBytes": 2686976,
+            "cpuSeconds": 0.03125
+          },
+          {
+            "type": "gpu-process",
+            "name": "msedgewebview2",
+            "pid": 7128,
+            "workingSet": 212762624,
+            "privateBytes": 172589056,
+            "cpuSeconds": 0.625
+          },
+          {
+            "type": "utility",
+            "name": "msedgewebview2",
+            "pid": 20140,
+            "workingSet": 42434560,
+            "privateBytes": 13279232,
+            "cpuSeconds": 0.203125
+          },
+          {
+            "type": "utility",
+            "name": "msedgewebview2",
+            "pid": 15132,
+            "workingSet": 20791296,
+            "privateBytes": 8040448,
+            "cpuSeconds": 0.09375
+          },
+          {
+            "type": "renderer",
+            "name": "msedgewebview2",
+            "pid": 16748,
+            "workingSet": 139440128,
+            "privateBytes": 65703936,
+            "cpuSeconds": 0.640625
+          }
+        ]
+      },
+      "afterMemory": {
+        "processes": 7,
+        "workingSetBytes": 826683392,
+        "privateBytes": 529768448,
+        "rows": [
+          {
+            "type": "main",
+            "name": "labelflow-smoke",
+            "pid": 18684,
+            "workingSet": 34160640,
+            "privateBytes": 8822784,
+            "cpuSeconds": 3.453125
+          },
+          {
+            "type": "main",
+            "name": "msedgewebview2",
+            "pid": 23556,
+            "workingSet": 136421376,
+            "privateBytes": 45723648,
+            "cpuSeconds": 4.1875
+          },
+          {
+            "type": "crashpad-handler",
+            "name": "msedgewebview2",
+            "pid": 20844,
+            "workingSet": 19058688,
+            "privateBytes": 3579904,
+            "cpuSeconds": 0.03125
+          },
+          {
+            "type": "gpu-process",
+            "name": "msedgewebview2",
+            "pid": 7128,
+            "workingSet": 302993408,
+            "privateBytes": 252473344,
+            "cpuSeconds": 3.484375
+          },
+          {
+            "type": "utility",
+            "name": "msedgewebview2",
+            "pid": 20140,
+            "workingSet": 42278912,
+            "privateBytes": 12869632,
+            "cpuSeconds": 0.296875
+          },
+          {
+            "type": "utility",
+            "name": "msedgewebview2",
+            "pid": 15132,
+            "workingSet": 20938752,
+            "privateBytes": 8060928,
+            "cpuSeconds": 0.09375
+          },
+          {
+            "type": "renderer",
+            "name": "msedgewebview2",
+            "pid": 16748,
+            "workingSet": 270831616,
+            "privateBytes": 198238208,
+            "cpuSeconds": 8.5
+          }
+        ]
+      },
+      "finalRevision": 61,
+      "correctness": {
+        "sourceUnchanged": true
+      },
+      "sourceUnchanged": true,
+      "label": "baseline",
+      "executableBytes": 17901568,
+      "executableSha256": "41be19c59cf61e2c563f693ecb6668efcf956b886789a3a40f021633fc6be6ba",
+      "scope": "Native release Tauri + 1080p, 20 shapes, two masks. Gesture includes Playwright delivery and saved-DOM observation. UI selection includes two animation frames after bitmap readiness; navigation is separate preloaded IPC selection/document retrieval. Memory after explicit GC; summed process working sets double-count shared pages. Startup and idle CPU are single functional samples, not cold-start p95 or sustained power measurements."
+    },
+    "optimized": {
+      "shellVisibleMs": 1528.25,
+      "firstImageReadyMs": 1859.1300999999999,
+      "idleCpuOneCorePercent": 0.8816948856053787,
+      "idleSeconds": 3.5443100000000003,
+      "navigation": {
+        "p50Ms": 551.1164000000008,
+        "p95Ms": 570.4773999999998,
+        "samples": 10
+      },
+      "selectionToCanvas": {
+        "p50Ms": 132.0048999999999,
+        "p95Ms": 152.7010999999984,
+        "samples": 10
+      },
+      "strokeToSaved": {
+        "p50Ms": 104.73409999999785,
+        "p95Ms": 139.34939999999915,
+        "samples": 50
+      },
+      "idleHeap": {
+        "usedSize": 3598888,
+        "totalSize": 4001792,
+        "embedderHeapUsedSize": 1674736,
+        "backingStorageSize": 21096282
+      },
+      "afterHeap": {
+        "usedSize": 6094704,
+        "totalSize": 6905856,
+        "embedderHeapUsedSize": 2003312,
+        "backingStorageSize": 23866373
+      },
+      "idleMemory": {
+        "processes": 7,
+        "workingSetBytes": 587165696,
+        "privateBytes": 310095872,
+        "rows": [
+          {
+            "type": "main",
+            "name": "labelflow",
+            "pid": 24124,
+            "workingSet": 32940032,
+            "privateBytes": 7487488,
+            "cpuSeconds": 0.15625
+          },
+          {
+            "type": "main",
+            "name": "msedgewebview2",
+            "pid": 19728,
+            "workingSet": 130322432,
+            "privateBytes": 41652224,
+            "cpuSeconds": 1
+          },
+          {
+            "type": "crashpad-handler",
+            "name": "msedgewebview2",
+            "pid": 13492,
+            "workingSet": 10039296,
+            "privateBytes": 2695168,
+            "cpuSeconds": 0.03125
+          },
+          {
+            "type": "gpu-process",
+            "name": "msedgewebview2",
+            "pid": 6084,
+            "workingSet": 209133568,
+            "privateBytes": 169955328,
+            "cpuSeconds": 0.578125
+          },
+          {
+            "type": "utility",
+            "name": "msedgewebview2",
+            "pid": 21728,
+            "workingSet": 42393600,
+            "privateBytes": 13242368,
+            "cpuSeconds": 0.234375
+          },
+          {
+            "type": "utility",
+            "name": "msedgewebview2",
+            "pid": 4612,
+            "workingSet": 20832256,
+            "privateBytes": 8036352,
+            "cpuSeconds": 0.109375
+          },
+          {
+            "type": "renderer",
+            "name": "msedgewebview2",
+            "pid": 24112,
+            "workingSet": 141504512,
+            "privateBytes": 67026944,
+            "cpuSeconds": 0.5625
+          }
+        ]
+      },
+      "afterMemory": {
+        "processes": 7,
+        "workingSetBytes": 697114624,
+        "privateBytes": 415879168,
+        "rows": [
+          {
+            "type": "main",
+            "name": "labelflow",
+            "pid": 24124,
+            "workingSet": 33935360,
+            "privateBytes": 7921664,
+            "cpuSeconds": 2.109375
+          },
+          {
+            "type": "main",
+            "name": "msedgewebview2",
+            "pid": 19728,
+            "workingSet": 134520832,
+            "privateBytes": 45191168,
+            "cpuSeconds": 3.5625
+          },
+          {
+            "type": "crashpad-handler",
+            "name": "msedgewebview2",
+            "pid": 13492,
+            "workingSet": 10039296,
+            "privateBytes": 2695168,
+            "cpuSeconds": 0.03125
+          },
+          {
+            "type": "gpu-process",
+            "name": "msedgewebview2",
+            "pid": 6084,
+            "workingSet": 239853568,
+            "privateBytes": 199331840,
+            "cpuSeconds": 2.046875
+          },
+          {
+            "type": "utility",
+            "name": "msedgewebview2",
+            "pid": 21728,
+            "workingSet": 42741760,
+            "privateBytes": 13438976,
+            "cpuSeconds": 0.359375
+          },
+          {
+            "type": "utility",
+            "name": "msedgewebview2",
+            "pid": 4612,
+            "workingSet": 20946944,
+            "privateBytes": 8052736,
+            "cpuSeconds": 0.109375
+          },
+          {
+            "type": "renderer",
+            "name": "msedgewebview2",
+            "pid": 24112,
+            "workingSet": 215076864,
+            "privateBytes": 139247616,
+            "cpuSeconds": 6
+          }
+        ]
+      },
+      "finalRevision": 61,
+      "correctness": {
+        "sourceUnchanged": true,
+        "nativeUndoRedoExact": true,
+        "cacheCleanupPreservesDocument": true
+      },
+      "sourceUnchanged": true,
+      "label": "optimized",
+      "executableBytes": 15107584,
+      "executableSha256": "669a5d53b05dc6e7c05825f95868e7786901133ee2a96271b1c6f58d305fdf14",
+      "scope": "Native release Tauri + 1080p, 20 shapes, two masks. Gesture includes Playwright delivery and saved-DOM observation. UI selection includes two animation frames after bitmap readiness; navigation is separate preloaded IPC selection/document retrieval. Memory after explicit GC; summed process working sets double-count shared pages. Startup and idle CPU are single functional samples, not cold-start p95 or sustained power measurements."
+    }
+  },
+  "thumbnails": {
+    "afterJpegBytes": 129608,
+    "beforePngBytes": 815367,
+    "images": 20,
+    "meanAbsoluteChannelError": 4.091753333333333,
+    "samples": [
+      {
+        "jpegBytes": 6599,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000020_leftImg8bit.png",
+        "pngBytes": 40462,
+        "sha256": "529ebf9e9303038bcabdac9ca3cb83a8c851122226c57216b8da393f2cc3fc76"
+      },
+      {
+        "jpegBytes": 6682,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000030_leftImg8bit.png",
+        "pngBytes": 40878,
+        "sha256": "62c26e961b8a6a678c65ccebe1150073ead448707ad8a9ac307d78d82f0132bf"
+      },
+      {
+        "jpegBytes": 6668,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000040_leftImg8bit.png",
+        "pngBytes": 42126,
+        "sha256": "9558c074ad7787fc978926bcad7a636cc810d8acb0d153b660e1c9a773020e66"
+      },
+      {
+        "jpegBytes": 6615,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000050_leftImg8bit.png",
+        "pngBytes": 41787,
+        "sha256": "d896bc3fbe6866cebd309199dc77081a33160a7c0329e9ffdc678d62cf003931"
+      },
+      {
+        "jpegBytes": 6276,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000060_leftImg8bit.png",
+        "pngBytes": 40416,
+        "sha256": "591ee3c3ec1b1f4b44d10cbb8e81024b8671fc32c68b4d9bebc978b471337806"
+      },
+      {
+        "jpegBytes": 6437,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000070_leftImg8bit.png",
+        "pngBytes": 41084,
+        "sha256": "71a75e191a2afc24e5edfac314420c10b566c4c235c855338ff8a27c2eae5dbe"
+      },
+      {
+        "jpegBytes": 6458,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000080_leftImg8bit.png",
+        "pngBytes": 41313,
+        "sha256": "63affc4c5f412edc425f4624e7357ef0f9e33dd0ec9dd8621226de220a59c6e2"
+      },
+      {
+        "jpegBytes": 6383,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000090_leftImg8bit.png",
+        "pngBytes": 40108,
+        "sha256": "4d0dbce153322687697857487018135a7aa0035fbe71c824187f52008b7ee359"
+      },
+      {
+        "jpegBytes": 5928,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000100_leftImg8bit.png",
+        "pngBytes": 38664,
+        "sha256": "3f30e90e70a78254c9782f2923a063c7aa6e0df0c460b0dffdc23df74bd4e932"
+      },
+      {
+        "jpegBytes": 5895,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000110_leftImg8bit.png",
+        "pngBytes": 39021,
+        "sha256": "d356a57ce3e4aeab4a411404876762c035a72e76a3c226a68d80f242ea133e76"
+      },
+      {
+        "jpegBytes": 6486,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000120_leftImg8bit.png",
+        "pngBytes": 41316,
+        "sha256": "1a51245a935e008e6ddcf12f3960594e0a082f0563ef7d844d634484012e17aa"
+      },
+      {
+        "jpegBytes": 6815,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000130_leftImg8bit.png",
+        "pngBytes": 42015,
+        "sha256": "76a10f4c4ab8511ddceced04deb1fc199cf53ce93aee50779b05daade1c452cb"
+      },
+      {
+        "jpegBytes": 7041,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000140_leftImg8bit.png",
+        "pngBytes": 41044,
+        "sha256": "22fb5b83400c4b7bdcdf3f55961b86ce9f69eb0fc988a0e824ec9946984b3dce"
+      },
+      {
+        "jpegBytes": 7003,
+        "name": "14_Otto_Lilienthal_Str_24_000000_000150_leftImg8bit.png",
+        "pngBytes": 41415,
+        "sha256": "3f14d633efb2b028614ddf0b07d99b4aca367475a53b76ec14f9d6aa47ea05a4"
+      },
+      {
+        "jpegBytes": 6512,
+        "name": "14_Otto_Lilienthal_Str_24_000001_000040_leftImg8bit.png",
+        "pngBytes": 40586,
+        "sha256": "e3ec8e0e4635b1425cbfbd7a07f0ddd6d2b73070c5b25f63fb48bbb3557eea9e"
+      },
+      {
+        "jpegBytes": 6481,
+        "name": "14_Otto_Lilienthal_Str_24_000001_000050_leftImg8bit.png",
+        "pngBytes": 40979,
+        "sha256": "898ed7eeed8c3732b2c4aade7074d4bde368ce51641f94b05125be009774b8f4"
+      },
+      {
+        "jpegBytes": 6231,
+        "name": "14_Otto_Lilienthal_Str_24_000001_000060_leftImg8bit.png",
+        "pngBytes": 40130,
+        "sha256": "8e2d5684f589cb366b43d16e8a363353e5afb933a6f701a1a5afac89fd65d0b5"
+      },
+      {
+        "jpegBytes": 6480,
+        "name": "14_Otto_Lilienthal_Str_24_000001_000070_leftImg8bit.png",
+        "pngBytes": 41328,
+        "sha256": "355b76c5ba3ceabcf51d0095807e8c0efa9ebf7d8d1529f4e083ce499e4563d5"
+      },
+      {
+        "jpegBytes": 6406,
+        "name": "14_Otto_Lilienthal_Str_24_000001_000080_leftImg8bit.png",
+        "pngBytes": 40964,
+        "sha256": "42450e869bb5f2161dd07e56e01addc5c6ef5e21f09300453f97658d9dad6451"
+      },
+      {
+        "jpegBytes": 6212,
+        "name": "14_Otto_Lilienthal_Str_24_000001_000090_leftImg8bit.png",
+        "pngBytes": 39731,
+        "sha256": "ee4928c8057626153f54d77ee8b7ad8db7bc8452a42aae87c63be5b77b1b9b74"
+      }
+    ],
+    "scope": "First 20 sorted real PNG photos from the authorized dataset folder; 200x140 bounding box; JPEG quality 78. Loss applies only to library thumbnails, never source images, full previews or label assets. Size comparison, not a timing benchmark.",
+    "sourceUnchanged": true
+  },
+  "initialWorkspace": {
+    "executableBytes": 17901056,
+    "executableSha256": "5b934c73d45e3abce6e4214f085cb54b10bc4472ae41d0d985131fddfdf93274",
+    "workspaceBytes": {
+      "src-tauri/target": 8111042500,
+      "node_modules": 179406622,
+      ".tools": 1476412106,
+      ".cache": 2029975156,
+      "dist": 370485
+    },
+    "freeBytes": 1667448832
+  },
+  "production": {
+    "executableBytes": 15107072,
+    "executableSha256": "de70a34fed287439820a5239d57e9419d124e8c0f9a3769d24b0f20ca0d62b1f",
+    "configuration": "src-tauri/tauri.conf.json (production default, no smoke override)",
+    "portablePath": "releases\\LabelFlow\\LabelFlow.exe",
+    "launch": {
+      "passed": true,
+      "nativeWindow": true,
+      "gracefulExit": true,
+      "cdpExposed": false,
+      "executable": "E:\\tools\\LabelFlow\\releases\\LabelFlow\\LabelFlow.exe",
+      "scope": "Production portable launch on the existing isolated resource fixture; functional window/exit/port check, not a full UI acceptance or startup timing benchmark."
+    }
+  }
+}

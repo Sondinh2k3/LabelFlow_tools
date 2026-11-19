@@ -1,0 +1,4 @@
+[build]
+# Tauri test binaries link large Windows metadata/PDBs. Keep build commit usage
+# bounded on the 16 GiB reference machine; CARGO_BUILD_JOBS can override this.
+jobs = 2

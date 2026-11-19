@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-preload-media"
+description = "Enables the preload_media command without any pre-configured scope."
+commands.allow = ["preload_media"]
+
+[[permission]]
+identifier = "deny-preload-media"
+description = "Denies the preload_media command without any pre-configured scope."
+commands.deny = ["preload_media"]

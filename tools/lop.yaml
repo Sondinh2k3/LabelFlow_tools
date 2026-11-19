@@ -1,0 +1,53 @@
+# lop.yaml — nguồn duy nhất cho ID lớp, nhóm được miễn và cách gộp 7 lớp
+# (Hướng dẫn v3 §1.3, §7.1, §8.5). Script chuyển đổi, script huấn luyện và cấu hình box
+# đều đọc file này. Sửa ở đây, không sửa trong từng script.
+phien_ban: 3
+bo_qua: 255            # Bỏ qua: không tính loss
+
+# id: giá trị pixel trong masks/ (file 2)
+# mien: true = nhóm được miễn (box cộng xác suất các lớp này)
+# mau: màu trên overlay, trùng màu trong dự án LabelFlow
+lop:
+  - {id: 0,  ma: mat_duong,       ten: "Mặt đường",          mien: true,  mau: "#804080"}
+  - {id: 1,  ma: via_he_le,       ten: "Vỉa hè / lề",        mien: false, mau: "#f423e8"}
+  - {id: 2,  ma: nha_tuong,       ten: "Nhà / tường",        mien: false, mau: "#464646"}
+  - {id: 3,  ma: ket_cau_co_dinh, ten: "Kết cấu cố định",    mien: true,  mau: "#ffc000"}
+  - {id: 4,  ma: xe_may_xe_dap,   ten: "Xe máy, xe đạp",     mien: true,  mau: "#0000e6"}
+  - {id: 5,  ma: o_to,            ten: "Ô tô",               mien: true,  mau: "#00008e"}
+  - {id: 6,  ma: xe_tai_xe_buyt,  ten: "Xe tải, xe buýt",    mien: true,  mau: "#000046"}
+  - {id: 7,  ma: xe_tho_so,       ten: "Xe thô sơ, ba gác",  mien: true,  mau: "#5a5aff"}
+  - {id: 8,  ma: nguoi,           ten: "Người",              mien: true,  mau: "#dc143c"}
+  - {id: 9,  ma: dong_vat,        ten: "Động vật",           mien: true,  mau: "#ff8c00"}
+  - {id: 10, ma: khac,            ten: "Khác",               mien: false, mau: "#00ff00"}
+
+# Lớp "vật che mép" dùng để sinh edge/ (đoạn cạnh đa giác bị che): xe, người, động vật, Khác.
+lop_che_mep: [4, 5, 6, 7, 8, 9, 10]
+
+# Gộp 11 lớp -> 7 lớp (bản so sánh ở vòng 1, Hướng dẫn v3 §12.1). 255 giữ 255.
+gop7:
+  ten: [mat_duong, via_he_le, nha_tuong, phuong_tien, nguoi_dong_vat, ket_cau_co_dinh, khac]
+  anh_xa: {0: 0, 1: 1, 2: 2, 3: 5, 4: 3, 5: 3, 6: 3, 7: 3, 8: 4, 9: 4, 10: 6, 255: 255}
+
+# Cách đọc file xuất của LabelFlow
+labelflow:
+  lop_semantic: cityscapes_semantic   # id layer semantic trong thư mục xuất masks/<id>/
+  lop_long_duong: road_extent         # layer vùng = đa giác lòng đường (file 1)
+  # ID xuất của LabelFlow -> ID dự án, cho các giá trị khác 0-10 và 255.
+  # Dự án tạo theo hướng dẫn cũ còn lớp bo_qua = 11: đổi thành 255.
+  doi_id: {11: 255}
+  # Pixel chưa tô xuất ra 255 (đã kiểm chứng). Giữ 255 = Bỏ qua (quy ước mới).
+  # Đặt 10 nếu muốn quay lại quy ước cũ "chưa tô = Khác" (Hướng dẫn v3 §8.5 bước 2).
+  chua_to: 255
+  # Road Extent dừng cách khung ảnh <= số px này (đỉnh click hơi lọt vào trong) -> kéo ra sát khung.
+  # Thực tế project_test1: hở 1-7 px. Đặt 0 để tắt.
+  bam_khung_px: 8
+
+# Ngưỡng của check_labels.py (Hướng dẫn v3 §10.3, Task Việc 3)
+nguong_qc:
+  bo_qua_trong_long_duong: 0.01    # cảnh báo khi > 1% diện tích Road Extent là 255
+  mat_duong_trong_long_duong: 0.95 # cảnh báo khi < 95% pixel Mặt đường nằm trong Road Extent
+  lech_mep_px: 3                   # khớp mép: lệch quá 3 px ...
+  lech_mep_ty_le_hang: 0.10        # ... ở hơn 10% số hàng được kiểm
+  dai_khac_chieu_dai: 0.3333       # dải Khác dọc mép dài > 1/3 chiều cao vùng đường
+  dai_khac_be_rong: 0.05           # ... và rộng < 5% bề rộng đa giác
+  so_anh_toi_thieu_moi_lop: 30     # thống kê: lớp được miễn có mặt trong < 30 ảnh

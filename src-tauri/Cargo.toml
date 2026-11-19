@@ -1,0 +1,38 @@
+[package]
+name = "labelflow"
+version = "0.1.0"
+description = "Offline desktop labeling workspace"
+edition = "2021"
+rust-version = "1.99"
+
+[lib]
+name = "labelflow_lib"
+# Desktop binaries link the Rust library directly; mobile/C ABI outputs are unused.
+crate-type = ["rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.37", features = ["bundled", "backup"] }
+fs2 = "0.4"
+uuid = { version = "1", features = ["v4"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "webp"] }
+base64 = "0.22"
+sha2 = "0.10"
+rfd = "0.15"
+png = "0.18"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.dev]
+# Tauri's Windows symbols make incremental caches large; callers may opt in with CARGO_INCREMENTAL=1.
+incremental = false
+
+[profile.release.package.labelflow]
+# Keep hot image/SQLite dependencies at opt-level 3; shrink application glue and UI logic.
+opt-level = "s"

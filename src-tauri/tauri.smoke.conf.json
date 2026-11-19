@@ -1,0 +1,15 @@
+{
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "LabelFlow",
+        "width": 1280,
+        "height": 820,
+        "minWidth": 960,
+        "minHeight": 640,
+        "additionalBrowserArgs": "--remote-debugging-port=9223 --remote-debugging-address=127.0.0.1"
+      }
+    ]
+  }
+}

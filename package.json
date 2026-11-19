@@ -1,0 +1,66 @@
+{
+  "name": "labelflow",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 1420 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:tooling": "node --test scripts/environment.test.mjs",
+    "test:ui": "node scripts/ui-tests.mjs",
+    "test:desktop": "node scripts/rust.mjs tauri build --debug --no-bundle --config src-tauri/tauri.smoke.conf.json && node scripts/desktop-smoke.mjs",
+    "tauri": "node scripts/rust.mjs tauri",
+    "desktop:dev": "node scripts/rust.mjs tauri dev",
+    "desktop:build": "node scripts/rust.mjs tauri build --no-bundle",
+    "rust:test": "node scripts/rust.mjs cargo test --locked --manifest-path src-tauri/Cargo.toml",
+    "rust:check": "node scripts/rust.mjs cargo clippy --locked --manifest-path src-tauri/Cargo.toml --all-targets -- -D warnings",
+    "rust:fmt": "node scripts/rust.mjs cargo fmt --manifest-path src-tauri/Cargo.toml -- --check",
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run test:tooling && npm run rust:fmt && npm run rust:test && npm run rust:check && npm run build",
+    "test:m2:acceptance": "node scripts/m2-acceptance.mjs",
+    "test:m2:desktop": "node scripts/m2-desktop-smoke.mjs",
+    "test:ai": "node scripts/ai-tests.mjs",
+    "test:m3:desktop": "node scripts/rust.mjs cargo test --locked --manifest-path src-tauri/Cargo.toml --test ai_assistance prepare_m3_desktop_project -- --ignored && node scripts/rust.mjs tauri build --debug --no-bundle --config src-tauri/tauri.smoke.conf.json && node scripts/m3-desktop-smoke.mjs",
+    "benchmark:m4": "node scripts/m4-benchmark.mjs",
+    "test:m4:desktop": "node scripts/rust.mjs cargo test --locked --manifest-path src-tauri/Cargo.toml --test road_review prepare_m4_desktop_project -- --ignored && node scripts/rust.mjs tauri build --debug --no-bundle --config src-tauri/tauri.smoke.conf.json && node scripts/m4-desktop-smoke.mjs",
+    "benchmark:m5": "node scripts/m5-benchmark.mjs",
+    "benchmark:resources": "node scripts/rust.mjs cargo test --locked --manifest-path src-tauri/Cargo.toml --test resource_efficiency prepare_resource_benchmark -- --ignored && node scripts/rust.mjs tauri build --no-bundle --config src-tauri/tauri.smoke.conf.json && node scripts/resource-desktop-benchmark.mjs optimized",
+    "test:m5:desktop": "node scripts/rust.mjs cargo test --locked --manifest-path src-tauri/Cargo.toml --test advanced_workflows prepare_m5_desktop_project -- --ignored && node scripts/rust.mjs tauri build --debug --no-bundle --config src-tauri/tauri.smoke.conf.json && node scripts/m5-desktop-smoke.mjs"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.56.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "@tauri-apps/cli": "^2.8.0",
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "eslint": "^10.14.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^17.0.0",
+    "prettier": "^3.6.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.40.0",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  }
+}

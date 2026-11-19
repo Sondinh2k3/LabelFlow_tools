@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-rank-similar-media"
+description = "Enables the rank_similar_media command without any pre-configured scope."
+commands.allow = ["rank_similar_media"]
+
+[[permission]]
+identifier = "deny-rank-similar-media"
+description = "Denies the rank_similar_media command without any pre-configured scope."
+commands.deny = ["rank_similar_media"]

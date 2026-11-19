@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-boxes",
+  "name": "Fixture boxes (not trained)",
+  "version": "1.0.0",
+  "license": "Project-owned test fixture; no third-party weights",
+  "file": "boxes.onnx",
+  "sha256": "01cb9ef1c4490b61c6a0c8911e17c3627fb066403ee0385abb4959637c7eb795",
+  "adapter": "onnx_boxes",
+  "layerId": "candidate_objects",
+  "classMap": ["candidate-0", "candidate-1"],
+  "input": {
+    "name": "image",
+    "width": 4,
+    "height": 2,
+    "mean": [0, 0, 0],
+    "std": [1, 1, 1]
+  },
+  "output": {
+    "name": "output",
+    "format": "boxes_xyxy_score_class",
+    "resize": "scale_xyxy"
+  }
+}

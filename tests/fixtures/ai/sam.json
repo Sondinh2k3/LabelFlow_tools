@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "kind": "sam_prompt",
+  "id": "fixture-sam",
+  "name": "Fixture SAM (not trained)",
+  "version": "1.0.0",
+  "license": "Project-owned test fixture; no third-party weights",
+  "input": {
+    "size": 256
+  },
+  "encoder": {
+    "file": "sam-encoder.onnx",
+    "sha256": "c4110e83e64bdb5aa8c097e8011046f000d769e3eb039f0900624c04738533ab"
+  },
+  "decoder": {
+    "file": "sam-decoder.onnx",
+    "sha256": "30939d3a8548708dc5ba66b87308c5fd112807c426af7eb2069ceec559b85a70"
+  }
+}

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-restore-image"
+description = "Enables the restore_image command without any pre-configured scope."
+commands.allow = ["restore_image"]
+
+[[permission]]
+identifier = "deny-restore-image"
+description = "Denies the restore_image command without any pre-configured scope."
+commands.deny = ["restore_image"]

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-verify-propagation"
+description = "Enables the verify_propagation command without any pre-configured scope."
+commands.allow = ["verify_propagation"]
+
+[[permission]]
+identifier = "deny-verify-propagation"
+description = "Denies the verify_propagation command without any pre-configured scope."
+commands.deny = ["verify_propagation"]

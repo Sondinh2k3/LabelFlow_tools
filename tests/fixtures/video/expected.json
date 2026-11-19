@@ -1,0 +1,380 @@
+{
+  "cfr.mp4": {
+    "sha256": "20950996965a87fa8eee763cf49289b89b41e79222c34543f58ac8131f854c6b",
+    "probe": {
+      "frames": [
+        {
+          "best_effort_timestamp": 0,
+          "best_effort_timestamp_time": "0.000000",
+          "side_data_list": [
+            {
+              "side_data_type": "H.26[45] User Data Unregistered SEI message"
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 1024,
+          "best_effort_timestamp_time": "0.100000"
+        },
+        {
+          "best_effort_timestamp": 2048,
+          "best_effort_timestamp_time": "0.200000"
+        },
+        {
+          "best_effort_timestamp": 3072,
+          "best_effort_timestamp_time": "0.300000"
+        },
+        {
+          "best_effort_timestamp": 4096,
+          "best_effort_timestamp_time": "0.400000"
+        },
+        {
+          "best_effort_timestamp": 5120,
+          "best_effort_timestamp_time": "0.500000"
+        },
+        {
+          "best_effort_timestamp": 6144,
+          "best_effort_timestamp_time": "0.600000"
+        },
+        {
+          "best_effort_timestamp": 7168,
+          "best_effort_timestamp_time": "0.700000"
+        },
+        {
+          "best_effort_timestamp": 8192,
+          "best_effort_timestamp_time": "0.800000"
+        },
+        {
+          "best_effort_timestamp": 9216,
+          "best_effort_timestamp_time": "0.900000"
+        },
+        {
+          "best_effort_timestamp": 10240,
+          "best_effort_timestamp_time": "1.000000"
+        },
+        {
+          "best_effort_timestamp": 11264,
+          "best_effort_timestamp_time": "1.100000"
+        }
+      ],
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 64,
+          "height": 48,
+          "time_base": "1/10240",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "Lavc63.1.102 libx264"
+          }
+        }
+      ]
+    }
+  },
+  "vfr.mp4": {
+    "sha256": "e9dcf735876cd44a7982013e6f2343ba6f007f43c745826e350603c27c70f8bb",
+    "probe": {
+      "frames": [
+        {
+          "best_effort_timestamp": 0,
+          "best_effort_timestamp_time": "0.000000",
+          "side_data_list": [
+            {
+              "side_data_type": "H.26[45] User Data Unregistered SEI message"
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 512,
+          "best_effort_timestamp_time": "0.040000"
+        },
+        {
+          "best_effort_timestamp": 2048,
+          "best_effort_timestamp_time": "0.160000"
+        },
+        {
+          "best_effort_timestamp": 3072,
+          "best_effort_timestamp_time": "0.240000"
+        },
+        {
+          "best_effort_timestamp": 5632,
+          "best_effort_timestamp_time": "0.440000"
+        },
+        {
+          "best_effort_timestamp": 6144,
+          "best_effort_timestamp_time": "0.480000"
+        },
+        {
+          "best_effort_timestamp": 8192,
+          "best_effort_timestamp_time": "0.640000"
+        },
+        {
+          "best_effort_timestamp": 11776,
+          "best_effort_timestamp_time": "0.920000"
+        },
+        {
+          "best_effort_timestamp": 12800,
+          "best_effort_timestamp_time": "1.000000"
+        },
+        {
+          "best_effort_timestamp": 14336,
+          "best_effort_timestamp_time": "1.120000"
+        },
+        {
+          "best_effort_timestamp": 14848,
+          "best_effort_timestamp_time": "1.160000"
+        },
+        {
+          "best_effort_timestamp": 17920,
+          "best_effort_timestamp_time": "1.400000"
+        },
+        {
+          "best_effort_timestamp": 19456,
+          "best_effort_timestamp_time": "1.520000"
+        }
+      ],
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 64,
+          "height": 48,
+          "time_base": "1/12800",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "Lavc63.1.102 libx264"
+          }
+        }
+      ]
+    }
+  },
+  "rotated.mp4": {
+    "sha256": "4cbb0bf83c40542045ec72995972942f700394a01338ebf437e269b26c8cae11",
+    "probe": {
+      "frames": [
+        {
+          "best_effort_timestamp": 0,
+          "best_effort_timestamp_time": "0.000000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            },
+            {
+              "side_data_type": "H.26[45] User Data Unregistered SEI message"
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 1024,
+          "best_effort_timestamp_time": "0.100000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 2048,
+          "best_effort_timestamp_time": "0.200000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 3072,
+          "best_effort_timestamp_time": "0.300000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 4096,
+          "best_effort_timestamp_time": "0.400000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 5120,
+          "best_effort_timestamp_time": "0.500000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 6144,
+          "best_effort_timestamp_time": "0.600000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 7168,
+          "best_effort_timestamp_time": "0.700000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 8192,
+          "best_effort_timestamp_time": "0.800000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 9216,
+          "best_effort_timestamp_time": "0.900000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 10240,
+          "best_effort_timestamp_time": "1.000000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        },
+        {
+          "best_effort_timestamp": 11264,
+          "best_effort_timestamp_time": "1.100000",
+          "side_data_list": [
+            {
+              "side_data_type": "3x3 displaymatrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        }
+      ],
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 64,
+          "height": 48,
+          "time_base": "1/10240",
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "encoder": "Lavc63.1.102 libx264"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "Display Matrix",
+              "displaymatrix": "\n00000000:            0      -65536           0\n00000001:        65536           0           0\n00000002:            0           0  1073741824\n",
+              "rotation": 90
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

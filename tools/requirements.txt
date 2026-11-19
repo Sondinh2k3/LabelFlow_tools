@@ -1,0 +1,6 @@
+# convert_labelflow.py, check_labels.py, overlay.py, agreement.py, test_events.py (đã thử với Python 3.12)
+numpy>=2,<3
+Pillow>=11,<14
+opencv-python-headless>=4.9,<6
+PyYAML>=6,<7
+# prelabel_mask2former.py cần thêm (máy có GPU): torch transformers

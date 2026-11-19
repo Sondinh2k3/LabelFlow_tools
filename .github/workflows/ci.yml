@@ -1,0 +1,37 @@
+name: LabelFlow checks
+on: [push, pull_request]
+jobs:
+  foundation:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.20.0'
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - name: Linux desktop prerequisites
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev librsvg2-dev libayatana-appindicator3-dev patchelf
+      - run: npm ci
+      - run: npm run check
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Optional AI protocol and real CPU inference
+        run: |
+          python -m pip install -r worker/requirements.txt
+          npm run test:ai
+      - run: npm run desktop:build
+      - name: Install UI test browser
+        if: runner.os == 'Linux'
+        run: npx playwright install --with-deps chromium
+      - name: UI smoke
+        if: runner.os == 'Linux'
+        run: npm run test:ui

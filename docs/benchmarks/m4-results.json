@@ -1,0 +1,43 @@
+{
+  "measuredDate": "2026-11-07",
+  "sqlite": {
+    "baseline": {
+      "p50Ms": 10.2849,
+      "p95Ms": 11.4775,
+      "samples": 50
+    },
+    "optimized": {
+      "p50Ms": 0.1332,
+      "p95Ms": 0.18139999999999998,
+      "samples": 50
+    },
+    "pageSize": 100,
+    "payloadBytesPerRow": 160086,
+    "queue10k": {
+      "p50Ms": 8.3596,
+      "p95Ms": 8.917100000000001,
+      "samples": 20
+    },
+    "resultExact": true,
+    "rows": 128,
+    "scope": "M3 json_extract query versus M4 normalized summary columns on same database; queue uses 10000 metadata-only records"
+  },
+  "renderer": {
+    "width": 1920,
+    "height": 1080,
+    "baseline": {
+      "p50Ms": 7.900000035762787,
+      "p95Ms": 14.199999988079071,
+      "samples": 30
+    },
+    "optimized": {
+      "p50Ms": 3.700000047683716,
+      "p95Ms": 4.800000011920929,
+      "samples": 30
+    },
+    "byteExact": true,
+    "imageDataReused": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0",
+    "scope": "Canvas2D full-raster replacement colorization + upload; not whole-app FPS"
+  }
+}

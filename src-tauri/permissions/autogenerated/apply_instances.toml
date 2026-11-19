@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-apply-instances"
+description = "Enables the apply_instances command without any pre-configured scope."
+commands.allow = ["apply_instances"]
+
+[[permission]]
+identifier = "deny-apply-instances"
+description = "Denies the apply_instances command without any pre-configured scope."
+commands.deny = ["apply_instances"]

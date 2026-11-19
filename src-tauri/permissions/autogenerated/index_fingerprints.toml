@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-index-fingerprints"
+description = "Enables the index_fingerprints command without any pre-configured scope."
+commands.allow = ["index_fingerprints"]
+
+[[permission]]
+identifier = "deny-index-fingerprints"
+description = "Denies the index_fingerprints command without any pre-configured scope."
+commands.deny = ["index_fingerprints"]

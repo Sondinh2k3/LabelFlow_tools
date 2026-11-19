@@ -1,0 +1,54 @@
+# ---------- Phụ thuộc và kết quả build (tạo lại bằng npm ci / npm run build / cargo) ----------
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+
+# ---------- Công cụ, cache và kết quả kiểm thử cục bộ ----------
+.tools/
+.cache/
+test-results/
+playwright-report/
+coverage/
+*.log
+*.tsbuildinfo
+
+# ---------- Bản phát hành (đưa lên GitHub Releases, không commit file .exe/.zip) ----------
+releases/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ai-venv/
+*.prof
+
+# ---------- Mô hình AI (tải riêng, có thể rất lớn) ----------
+*.onnx
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# ---------- Dữ liệu dự án và dữ liệu thật (có mặt người, biển số: không đưa lên git) ----------
+.labelflow/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+LabelFlow-export-*/
+img/
+bao_cao_kiem_tra_labelflow_anh/
+
+# ---------- Biến môi trường, bí mật ----------
+.env
+.env.*
+
+# ---------- Hệ điều hành, trình soạn thảo ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
